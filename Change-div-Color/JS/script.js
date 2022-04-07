@@ -4,14 +4,12 @@ let log = console.log;
 let btn = document.querySelector(".btn");
 let divEl =  document.querySelector(".myDiv");
 let color = ["red","blue","green"];
-let i = 0;
+let count = 0
+
 btn.onclick = function(){
-    
-        divEl.style.backgroundColor = color[i];
-        i++;
-        if(i===3){
-            i=0;
-        }
-        
-   
+    divEl.style.backgroundColor=color[count]; 
+    count++
+    if(count==3){
+        count=0;
+    }
 }
